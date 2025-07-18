@@ -1,0 +1,35 @@
+.sidebar {
+  position: fixed; /* Keeps the sidebar in place */
+  left: 0;
+  bottom: 0;
+  top: 56px; /* Starts below the header */
+  background-color: white;
+  width: 72px; /* Standard compact sidebar width */
+  z-index: 200; /* Ensures it's above other content but below header if needed */
+  padding-top: 10px; /* Small padding at the top */
+}
+
+.sidebar-link {
+  height: 74px; /* Height for each link item */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from links if they were anchors */
+  color: black; /* Default text color */
+}
+
+.sidebar-link:hover {
+  background-color: rgb(235, 235, 235); /* Light grey on hover */
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 10px;
+}
